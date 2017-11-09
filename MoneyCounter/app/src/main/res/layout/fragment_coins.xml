@@ -1,0 +1,196 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.CoinsFragment">
+
+    <LinearLayout
+        android:id="@+id/coins_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/coin_1_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:freezesText="true"
+                android:hint="@string/enter_quantity"
+                android:inputType="number"
+                android:tag="01"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/coin_1"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/coin_1_quantity"
+                android:layout_alignBottom="@+id/coin_1_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/coin_1"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/coin_5_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:freezesText="true"
+                android:hint="@string/enter_quantity"
+                android:inputType="number"
+                android:tag="05"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/coin_5"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/coin_5_quantity"
+                android:layout_alignBottom="@+id/coin_5_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/coin_5"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/coin_10_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:freezesText="true"
+                android:hint="@string/enter_quantity"
+                android:inputType="number"
+                android:tag="10"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/coin_10"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/coin_10_quantity"
+                android:layout_alignBottom="@+id/coin_10_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/coin_10"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/coin_25_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:freezesText="true"
+                android:hint="@string/enter_quantity"
+                android:inputType="number"
+                android:tag="25"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/coin_25"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/coin_25_quantity"
+                android:layout_alignBottom="@+id/coin_25_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/coin_25"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/coin_50_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:freezesText="true"
+                android:hint="@string/enter_quantity"
+                android:inputType="number"
+                android:tag="50"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/coin_50"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/coin_50_quantity"
+                android:layout_alignBottom="@+id/coin_50_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/coin_50"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/coin_100_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:freezesText="true"
+                android:hint="@string/enter_quantity"
+                android:inputType="number"
+                android:tag="100"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/coin_100"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/coin_100_quantity"
+                android:layout_alignBottom="@+id/coin_100_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/coin_100"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

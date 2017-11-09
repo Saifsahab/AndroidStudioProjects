@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kpgsoftworks.apps.moneycounter.TotalActivity"
+    tools:showIn="@layout/activity_total">
+
+    <LinearLayout
+        android:id="@+id/total_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/no_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/no_entries"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_large"
+            android:visibility="gone" />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/notes_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:visibility="gone">
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_span="3"
+                    android:tag="notes_heading"
+                    android:text="@string/button_notes"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dollar_1"
+                    android:layout_gravity="end"
+                    android:text="@string/dollar_1"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_1_quantity"
+                    android:layout_gravity="end"
+                    android:tag="notes1_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_1_value"
+                    android:layout_gravity="end"
+                    android:tag="notes1"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dollar_2"
+                    android:layout_gravity="end"
+                    android:text="@string/dollar_2"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_2_quantity"
+                    android:layout_gravity="end"
+                    android:tag="notes2_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_2_value"
+                    android:layout_gravity="end"
+                    android:tag="notes2"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dollar_5"
+                    android:layout_gravity="end"
+                    android:text="@string/dollar_5"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_5_quantity"
+                    android:layout_gravity="end"
+                    android:tag="notes5_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_5_value"
+                    android:layout_gravity="end"
+                    android:tag="notes5"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dollar_10"
+                    android:layout_gravity="end"
+                    android:text="@string/dollar_10"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_10_quantity"
+                    android:layout_gravity="end"
+                    android:tag="notes10_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_10_value"
+                    android:layout_gravity="end"
+                    android:tag="notes10"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dollar_20"
+                    android:layout_gravity="end"
+                    android:text="@string/dollar_20"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_20_quantity"
+                    android:layout_gravity="end"
+                    android:tag="notes20_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_20_value"
+                    android:layout_gravity="end"
+                    android:tag="notes20"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dollar_50"
+                    android:layout_gravity="end"
+                    android:text="@string/dollar_50"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_50_quantity"
+                    android:layout_gravity="end"
+                    android:tag="notes50_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_50_value"
+                    android:layout_gravity="end"
+                    android:tag="notes50"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dollar_100"
+                    android:layout_gravity="end"
+                    android:text="@string/dollar_100"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_100_quantity"
+                    android:layout_gravity="end"
+                    android:tag="notes100_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_100_value"
+                    android:layout_gravity="end"
+                    android:tag="notes100"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dollar_500"
+                    android:layout_gravity="end"
+                    android:text="@string/dollar_500"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_500_quantity"
+                    android:layout_gravity="end"
+                    android:tag="notes500_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_500_value"
+                    android:layout_gravity="end"
+                    android:tag="notes500"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dollar_1000"
+                    android:layout_gravity="end"
+                    android:text="@string/dollar_1000"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_1000_quantity"
+                    android:layout_gravity="end"
+                    android:tag="notes1000_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_1000_value"
+                    android:layout_gravity="end"
+                    android:tag="notes1000"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dollar_5000"
+                    android:layout_gravity="end"
+                    android:text="@string/dollar_5000"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_5000_quantity"
+                    android:layout_gravity="end"
+                    android:tag="notes5000_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_5000_value"
+                    android:layout_gravity="end"
+                    android:tag="notes5000"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dollar_10000"
+                    android:layout_gravity="end"
+                    android:text="@string/dollar_10000"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_10000_quantity"
+                    android:layout_gravity="end"
+                    android:tag="notes10000_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_note_10000_value"
+                    android:layout_gravity="end"
+                    android:tag="notes10000"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/notes_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:text="@string/total"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/view_notes_total_quantity"-->
+                <!--android:layout_gravity="end"-->
+                <!--android:tag="notes_total_q"-->
+                <!--android:textAlignment="textEnd"-->
+                <!--android:textSize="@dimen/text_size_large" />-->
+
+                <TextView
+                    android:id="@+id/view_notes_total"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="notes_total"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_span="3"
+                    android:tag="coins_heading"
+                    android:text="@string/button_coins"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/coin_1"
+                    android:layout_gravity="end"
+                    android:text="@string/coin_1"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_coin_1_quantity"
+                    android:layout_gravity="end"
+                    android:tag="coins01_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_coin_1_value"
+                    android:layout_gravity="end"
+                    android:tag="coins01"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/coin_5"
+                    android:layout_gravity="end"
+                    android:text="@string/coin_5"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_coin_5_quantity"
+                    android:layout_gravity="end"
+                    android:tag="coins05_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_coin_5_value"
+                    android:layout_gravity="end"
+                    android:tag="coins05"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/coin_10"
+                    android:layout_gravity="end"
+                    android:text="@string/coin_10"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_coin_10_quantity"
+                    android:layout_gravity="end"
+                    android:tag="coins10_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_coin_10_value"
+                    android:layout_gravity="end"
+                    android:tag="coins10"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/coin_25"
+                    android:layout_gravity="end"
+                    android:text="@string/coin_25"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_coin_25_quantity"
+                    android:layout_gravity="end"
+                    android:tag="coins25_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_coin_25_value"
+                    android:layout_gravity="end"
+                    android:tag="coins25"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/coin_50"
+                    android:layout_gravity="end"
+                    android:text="@string/coin_50"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_coin_50_quantity"
+                    android:layout_gravity="end"
+                    android:tag="coins50_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_coin_50_value"
+                    android:layout_gravity="end"
+                    android:tag="coins50"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/coin_100"
+                    android:layout_gravity="end"
+                    android:text="@string/coin_100"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_coin_100_quantity"
+                    android:layout_gravity="end"
+                    android:tag="coins100_q"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_coin_100_value"
+                    android:layout_gravity="end"
+                    android:tag="coins100"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/coins_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/coin_total"
+                    android:layout_gravity="end"
+                    android:text="@string/total"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/view_coins_total_quantity"-->
+                <!--android:layout_gravity="end"-->
+                <!--android:tag="coins_total_q"-->
+                <!--android:textAlignment="textEnd"-->
+                <!--android:textSize="@dimen/text_size_large" />-->
+
+                <TextView
+                    android:id="@+id/view_coins_total"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="coins_total"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_span="3"
+                    android:tag="checks_heading"
+                    android:text="@string/button_checks"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_1"
+                    android:layout_gravity="end"
+                    android:text="@string/n1"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_1_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks1"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_2"
+                    android:layout_gravity="end"
+                    android:text="@string/n2"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_2_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks2"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_3"
+                    android:layout_gravity="end"
+                    android:text="@string/n3"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_3_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks3"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_4"
+                    android:layout_gravity="end"
+                    android:text="@string/n4"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_4_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks4"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_5"
+                    android:layout_gravity="end"
+                    android:text="@string/n5"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_5_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks5"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_6"
+                    android:layout_gravity="end"
+                    android:text="@string/n6"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_6_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks6"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_7"
+                    android:layout_gravity="end"
+                    android:text="@string/n7"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_7_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks7"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_8"
+                    android:layout_gravity="end"
+                    android:text="@string/n8"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_8_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks8"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_9"
+                    android:layout_gravity="end"
+                    android:text="@string/n9"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_9_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks9"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_10"
+                    android:layout_gravity="end"
+                    android:text="@string/n10"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_10_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks10"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_11"
+                    android:layout_gravity="end"
+                    android:text="@string/n11"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_11_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks11"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_12"
+                    android:layout_gravity="end"
+                    android:text="@string/n12"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_12_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks12"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_13"
+                    android:layout_gravity="end"
+                    android:text="@string/n13"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_13_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks13"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_14"
+                    android:layout_gravity="end"
+                    android:text="@string/n14"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_14_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks14"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_15"
+                    android:layout_gravity="end"
+                    android:text="@string/n15"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_15_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks15"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_16"
+                    android:layout_gravity="end"
+                    android:text="@string/n16"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_16_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks16"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_17"
+                    android:layout_gravity="end"
+                    android:text="@string/n17"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_17_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks17"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_18"
+                    android:layout_gravity="end"
+                    android:text="@string/n18"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_18_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks18"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_19"
+                    android:layout_gravity="end"
+                    android:text="@string/n19"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_19_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks19"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_20"
+                    android:layout_gravity="end"
+                    android:text="@string/n20"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_20_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks20"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_21"
+                    android:layout_gravity="end"
+                    android:text="@string/n21"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_21_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks21"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_22"
+                    android:layout_gravity="end"
+                    android:text="@string/n22"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_22_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks22"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_23"
+                    android:layout_gravity="end"
+                    android:text="@string/n23"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_23_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks23"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_24"
+                    android:layout_gravity="end"
+                    android:text="@string/n24"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_24_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks24"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_25"
+                    android:layout_gravity="end"
+                    android:text="@string/n25"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_25_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks25"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_26"
+                    android:layout_gravity="end"
+                    android:text="@string/n26"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_26_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks26"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_27"
+                    android:layout_gravity="end"
+                    android:text="@string/n27"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_27_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks27"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_28"
+                    android:layout_gravity="end"
+                    android:text="@string/n28"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_28_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks28"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_29"
+                    android:layout_gravity="end"
+                    android:text="@string/n29"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_29_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks29"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/check_layout_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin_xsmall"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/check_30"
+                    android:layout_gravity="end"
+                    android:text="@string/n30"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_check_30_value"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks30"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/checks_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_bottom_border"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:text="@string/total"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_checks_total"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="checks_total"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+
+            <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/grand_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:text="@string/grand_total"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/view_grand_total"
+                    android:layout_gravity="end"
+                    android:layout_span="2"
+                    android:tag="grand_total"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_large" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

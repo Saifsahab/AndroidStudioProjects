@@ -1,0 +1,973 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.ChecksFragment">
+
+    <LinearLayout
+        android:id="@+id/checks_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/check_1_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="1"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/check_1"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_1_quantity"
+                android:layout_alignBottom="@+id/check_1_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n1"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_2_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="2"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_2"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_2_quantity"
+                android:layout_alignBottom="@+id/check_2_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n2"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_3_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="3"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_3"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_3_quantity"
+                android:layout_alignBottom="@+id/check_3_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n3"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_4_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="4"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_4"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_4_quantity"
+                android:layout_alignBottom="@+id/check_4_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n4"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_5_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="5"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_5"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_5_quantity"
+                android:layout_alignBottom="@+id/check_5_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n5"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_6_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="6"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_6"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_6_quantity"
+                android:layout_alignBottom="@+id/check_6_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n6"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_7_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="7"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_7"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_7_quantity"
+                android:layout_alignBottom="@+id/check_7_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n7"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_8_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="8"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_8"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_8_quantity"
+                android:layout_alignBottom="@+id/check_8_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n8"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_9_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="9"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_9"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_9_quantity"
+                android:layout_alignBottom="@+id/check_9_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n9"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_10_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="10"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_10"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_10_quantity"
+                android:layout_alignBottom="@+id/check_10_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n10"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_11_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="11"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_11"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_11_quantity"
+                android:layout_alignBottom="@+id/check_11_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n11"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_12_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="12"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_12"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_12_quantity"
+                android:layout_alignBottom="@+id/check_12_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n12"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_13_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="13"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_13"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_13_quantity"
+                android:layout_alignBottom="@+id/check_13_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n13"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_14_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="14"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_14"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_14_quantity"
+                android:layout_alignBottom="@+id/check_14_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n14"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_15_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="15"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_15"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_15_quantity"
+                android:layout_alignBottom="@+id/check_15_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n15"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_16_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="16"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_16"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_16_quantity"
+                android:layout_alignBottom="@+id/check_16_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n16"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_17_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="17"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_17"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_17_quantity"
+                android:layout_alignBottom="@+id/check_17_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n17"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_18_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="18"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_18"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_18_quantity"
+                android:layout_alignBottom="@+id/check_18_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n18"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_19_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="19"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_19"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_19_quantity"
+                android:layout_alignBottom="@+id/check_19_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n19"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_20_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="20"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_20"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_20_quantity"
+                android:layout_alignBottom="@+id/check_20_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n20"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_21_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="21"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_21"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_21_quantity"
+                android:layout_alignBottom="@+id/check_21_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n21"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_22_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="22"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_22"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_22_quantity"
+                android:layout_alignBottom="@+id/check_22_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n22"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_23_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="23"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_23"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_23_quantity"
+                android:layout_alignBottom="@+id/check_23_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n23"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_24_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="24"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_24"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_24_quantity"
+                android:layout_alignBottom="@+id/check_24_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n24"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_25_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="25"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_25"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_25_quantity"
+                android:layout_alignBottom="@+id/check_25_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n25"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_26_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="26"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_26"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_26_quantity"
+                android:layout_alignBottom="@+id/check_26_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n26"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_27_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="27"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_27"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_27_quantity"
+                android:layout_alignBottom="@+id/check_27_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n27"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_28_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="28"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_28"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_28_quantity"
+                android:layout_alignBottom="@+id/check_28_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n28"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_29_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="29"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_29"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_29_quantity"
+                android:layout_alignBottom="@+id/check_29_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n29"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/check_layout_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/check_30_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="@string/enter_amount"
+                android:inputType="numberDecimal"
+                android:tag="30"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+
+            <TextView
+                android:id="@+id/check_30"
+                android:layout_width="@dimen/text_view_prefix_width"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/check_30_quantity"
+                android:layout_alignBottom="@+id/check_30_quantity"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_gravity="end"
+                android:text="@string/n30"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <Button
+                android:id="@+id/button_add"
+                style="@style/ButtonText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:background="@drawable/button_indigo"
+                android:onClick="addCheck"
+                android:text="@string/button_add"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/button_total"
+                style="@style/ButtonText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:background="@drawable/button_indigo"
+                android:onClick="openTotal"
+                android:text="@string/button_total" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

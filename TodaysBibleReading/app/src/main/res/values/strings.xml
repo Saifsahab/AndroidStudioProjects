@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Bible Reading</string>
+    <string name="app_name_long">Today\'s Bible Reading</string>
+    <string name="app_version">0.1</string>
+    <string name="action_settings">Settings</string>
+    <string name="January">Jan</string>
+    <string name="February">Feb</string>
+    <string name="March">Mar</string>
+    <string name="April">Apr</string>
+    <string name="May">May</string>
+    <string name="June">Jun</string>
+    <string name="July">Jul</string>
+    <string name="August">Aug</string>
+    <string name="September">Sep</string>
+    <string name="October">Oct</string>
+    <string name="November">Nov</string>
+    <string name="December">Dec</string>
+    <string name="read_intro">Read the KJV Bible in a year</string>
+</resources>

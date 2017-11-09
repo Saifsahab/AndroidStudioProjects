@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context="com.kpgsoftworks.apps.moneycounter.SplashActivity"
+    tools:showIn="@layout/activity_splash">
+
+    <TextView
+        android:id="@+id/splash_main_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/splash_margin_top"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/splash_main_text_size" />
+
+    <TextView
+        android:id="@+id/splash_version_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/splash_margin_bottom"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="end"
+        android:text="@string/app_version"
+        android:textColor="@color/white"
+        android:textSize="@dimen/splash_version_text_size" />
+
+</RelativeLayout>
