@@ -31,7 +31,7 @@ public class ChecksFragment extends Fragment {
 
     private static final String TAG = "mc.ChecksFragment";
     private static Bundle mSavedInstanceState;
-    private static LinearLayout checksLayout;
+    private LinearLayout checksLayout;
 
     // TODO: Rename and change types of parameters
     private String mParam1;

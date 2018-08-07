@@ -30,7 +30,7 @@ public class CoinsFragment extends Fragment {
 
     private static final String TAG = "mc.CoinsFragment";
     private static Bundle mSavedInstanceState;
-    private static LinearLayout coinsLayout;
+    private LinearLayout coinsLayout;
 
     // TODO: Rename and change types of parameters
     private String mParam1;

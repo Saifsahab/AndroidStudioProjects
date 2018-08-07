@@ -30,7 +30,7 @@ public class NotesFragment extends Fragment {
 
     private static final String TAG = "mc.NotesFragment";
     private static Bundle mSavedInstanceState;
-    private static LinearLayout notesLayout;
+    private LinearLayout notesLayout;
 
     // TODO: Rename and change types of parameters
     private String mParam1;

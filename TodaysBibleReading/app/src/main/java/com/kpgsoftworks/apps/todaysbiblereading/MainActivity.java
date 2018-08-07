@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static Calendar EOY; // End Of Year
 
-    private static TextView readingTextView;
+    private TextView readingTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

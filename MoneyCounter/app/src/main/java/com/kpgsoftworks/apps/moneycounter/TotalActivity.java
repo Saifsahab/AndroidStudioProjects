@@ -19,9 +19,10 @@ public class TotalActivity extends AppCompatActivity {
     private static final String TAG = "mc.TotalActivity";
     private static final BigDecimal ZERO = new BigDecimal("0");
 
-    private static Decimal grandTotal = new Decimal(ZERO.toString());
     private static Bundle mSavedInstanceState;
-    private static LinearLayout totalLayout;
+
+    private LinearLayout totalLayout;
+    private Decimal grandTotal = new Decimal(ZERO.toString());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
